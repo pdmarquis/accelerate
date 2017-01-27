@@ -54,6 +54,7 @@
 #single-case-studies-wrapper {
     width: 100%;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 #single-case-studies-wrapper h1, h2, h3, h4, h5, h6 {
@@ -97,6 +98,10 @@
     height: auto;
 }
 
+.live-site-link, .project-link {
+    color: #45ac9d !important;
+}
+
 /* Front Page */
 
 .featured-h4 {
@@ -114,7 +119,9 @@
 
 .work-items {
     margin: 0 0 6rem 0;
+    overflow: hidden;
 }
 .work-item {
+    float: left;
     width: 33%;
 }

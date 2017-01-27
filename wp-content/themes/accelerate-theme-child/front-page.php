@@ -31,21 +31,20 @@ get_header(); ?>
             
             <h4 class="featured-h4">Featured Work</h4>
             
-            <div class="work-item">
-            
-                <?php query_posts('posts_per_page=1&post_type=case_studies'); ?>
-                <?php while ( have_posts() ) : the_post(); 
+            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+            <?php while ( have_posts() ) : the_post(); 
 
-                    $image_1 = get_field('image_1');
-                    $size = "medium";
-                ?>
+                $image_1 = get_field('image_1');
+                $size = "medium";
+            ?>
+                <div class="work-item">
                     <figure>
                         <a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( $image_1, $size ); ?></a>
                     </figure>
                     <h4 class="campaign-name"><?php the_title(); ?></h4>
-                <?php endwhile; ?> 
-                <?php wp_reset_query(); ?>
-            </div><!-- .work-item -->
+                </div><!-- .work-item -->
+            <?php endwhile; ?> 
+            <?php wp_reset_query(); ?>
         </div><!-- .work-items -->
 	</div><!-- .site-content -->
 </section><!-- .featured-work -->
