@@ -28,7 +28,7 @@
 	width: 50%;
 }
 
-.blog-post h4 {
+.site-content h4 {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
@@ -76,23 +76,45 @@
     font-size: smaller;
 }
 
-.project-sidebar {
+#project-sidebar {
     float: left;
     width: 40%;
     margin-right: 3rem;
 }
 
-.project-images {
+#project-images {
     float: left;
     width: 55%;
 }
 
-.project-images figure {
+#project-images figure {
     width: 100%;
     margin-bottom: 4rem;
 }
 
-.project-images img {
+#project-images img {
     width: 100%;
     height: auto;
+}
+
+/* Front Page */
+
+.featured-h4 {
+    color: #000 !important;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.campaign-name {
+    color: #000 !important;
+    text-transform: capitalize !important;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.work-items {
+    margin: 0 0 6rem 0;
+}
+.work-item {
+    width: 33%;
 }
