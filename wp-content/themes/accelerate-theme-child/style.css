@@ -20,6 +20,11 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav ul li {
+    display: inline;
+    margin-right: 2rem;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
