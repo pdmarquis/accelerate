@@ -130,3 +130,9 @@
     float: left;
     width: 33%;
 }
+
+/* Read More */
+.read-more {
+    color: #45ac9d !important;
+    margin-left: 1rem;
+}

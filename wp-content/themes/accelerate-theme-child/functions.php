@@ -40,3 +40,19 @@
  }
 
 add_action('init', 'create_custom_post_types');
+
+/**
+ * Customize the "Read More" string at the end of an excerpt and make it a 
+ * link to the post
+ *
+ * Added the read-more class to allow CSS styles to be applied.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ *
+ *
+ * function wpdocs_excerpt_more( $more ) {
+ *    return '<a href="'.get_the_permalink().'" class="read-more">Read More &gt;</a>';
+ * }
+ * add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+*/
