@@ -29,39 +29,7 @@
     margin-top: 2rem;
 }
 
-.field-wrap .pdm-send-btn {
-    float: right;
-    background: none repeat scroll 0 0 #45ac9d;
-    color: #fff;
-    font-size: 1.4rem;
-    line-height: 3rem;
-    width: 40% !important;
-}
 
-#nf-form-1-cont nf-fields-wrap nf-field:nth-of-type(-n+2) {
-    float: left;
-    width: 48%;
-}
-
-#nf-form-1-cont nf-fields-wrap nf-field:nth-of-type(2) {
-    margin-left: 4%;
-}
-
-#nf-field-3 {
-    border: 1px solid #BFBFBF;
-}
-
-#nf-form-1-cont .nf-response-msg {
-    text-align: center;
-}
-
-#nf-form-1-cont .nf-response-msg h1 {
-    color: #45ac9d
-}
-
-#nf-form-1-cont .nf-response-msg p {
-    font-size: 2rem;
-}
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
@@ -143,6 +111,126 @@
 
 .live-site-link, .project-link {
     color: #45ac9d !important;
+}
+
+/* Contact Page */
+
+.field-wrap .pdm-send-btn {
+    float: right;
+    background: none repeat scroll 0 0 #45ac9d;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 40% !important;
+}
+
+/*Needed to get the first two input fields to float them left*/
+#nf-form-1-cont nf-fields-wrap nf-field:nth-of-type(-n+2) {
+    float: left;
+    width: 48%;
+}
+
+/*Needed to get the second input field (email) to add a margin to the left of it*/
+#nf-form-1-cont nf-fields-wrap nf-field:nth-of-type(2) {
+    margin-left: 4%;
+}
+
+#nf-field-3 {
+    border: 1px solid #BFBFBF;
+}
+
+/*Response message after Contact form is sent*/
+#nf-form-1-cont .nf-response-msg {
+    text-align: center;
+}
+
+#nf-form-1-cont .nf-response-msg h1 {
+    color: #45ac9d
+}
+
+#nf-form-1-cont .nf-response-msg p {
+    font-size: 2rem;
+}
+
+/* About Page */
+
+#services-intro {
+    text-align: center;
+}
+
+#services-intro h1 {
+    color: #3a3939;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+#services-intro p {
+    color: #3a3939;
+}
+
+#services-wrapper {
+    width: 100%;
+}
+
+#services-wrapper article {
+    margin-top: 2rem;
+}
+
+#services-wrapper .service-name {
+    font-weight: 500;
+    width: 100%;
+}
+
+#services-wrapper .service-image {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 10%;
+}
+
+#services-wrapper .service-description {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 80%;
+}
+
+/* for these, the direct descendent of the services-wrapper id needs to be specified or the nth-of-type will not work*/
+#services-wrapper article:nth-of-type(even) .service-description {
+    order: 1;
+}
+
+#services-wrapper article:nth-of-type(even) .service-image {
+    order: 2;
+}
+
+.flex-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about-contact {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#about-contact h2 {
+    display: inline;
+}
+
+#about-contact a {
+    margin-left: 4rem;
 }
 
 /* Front Page */
