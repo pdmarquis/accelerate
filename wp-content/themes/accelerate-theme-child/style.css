@@ -12,6 +12,15 @@
 
 @import url("../accelerate-theme/style.css");
 
+/* Global */
+
+.read-more {
+    color: #45ac9d !important;
+    margin-left: 1rem;
+}
+
+/* Front Page */
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -29,14 +38,12 @@
     margin-top: 2rem;
 }
 
-
-
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
 
 .blog-post {
-	width: 50%;
+/*	width: 50%;*/
 }
 
 .site-content h4 {
@@ -58,6 +65,64 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+.featured-h4 {
+    color: #000 !important;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.campaign-name {
+    color: #000 !important;
+    text-transform: capitalize !important;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.work-items {
+    margin: 0 0 6rem 0;
+    overflow: hidden;
+}
+.work-item {
+    float: left;
+    width: 33%;
+}
+
+#recent-posts, #latest-tweet {
+    box-sizing: border-box;
+    width: 45%;
+}
+
+#recent-posts {
+    float: left;
+}
+
+#latest-tweet {
+    float: right;
+}
+
+#latest-tweet h3 {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+}
+
+#latest-tweet ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+#latest-tweet .widget {
+    padding: 0;
+}
+
+#latest-tweet .follow-us {
+    color: #45ac9d;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Case Studies */
@@ -233,32 +298,69 @@
     margin-left: 4rem;
 }
 
-/* Front Page */
+/* 404 Page */
 
-.featured-h4 {
-    color: #000 !important;
+.page-404 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-404 .page-header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 30%;
+    border: none;
+}
+
+.page-404 h1 {
+    color: #45ac9d;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 2rem; 
     text-align: center;
-    margin: 0 0 2rem 0;
 }
 
-.campaign-name {
-    color: #000 !important;
-    text-transform: capitalize !important;
+.page-404 p {
+    margin-top: 1rem; 
     text-align: center;
-    margin: 1rem 0 0 0;
 }
 
-.work-items {
-    margin: 0 0 6rem 0;
-    overflow: hidden;
-}
-.work-item {
-    float: left;
-    width: 33%;
+.page-404 figure {
+    width: 80%;
+/*    height: auto;*/
+    margin: 2rem auto;
 }
 
-/* Read More */
-.read-more {
-    color: #45ac9d !important;
-    margin-left: 1rem;
+.page-404 figure img {
+    width: 100%;
+    height: auto;
+}
+
+.page-404 figure figcaption {
+    background-color: #bfbfbf;
+    text-align: left;
+    padding: .5rem 1rem;
+    font-size: .8em;
+}
+
+.page-404 a {
+    color: #45ac9d;
+}
+
+.page-404 .page-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
 }

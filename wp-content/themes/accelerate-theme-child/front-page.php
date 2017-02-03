@@ -14,19 +14,19 @@
 
 get_header(); ?>
 
-<section class="home-page">
-	<div class="site-content">
+    <section class="home-page">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/case-studies/">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .site-content -->
-</section><!-- .home-page -->
+    </section><!-- .home-page -->
+<!--	</div> .site-content -->
 
-<section class="featured-work">
-    <div class="site-content">
+<div class="site-content">
+    <section class="featured-work">
+<!--    <div class="site-content">-->
         <div class="work-items">
             
             <h4 class="featured-h4">Featured Work</h4>
@@ -46,11 +46,11 @@ get_header(); ?>
             <?php endwhile; ?> 
             <?php wp_reset_query(); ?>
         </div><!-- .work-items -->
-	</div><!-- .site-content -->
-</section><!-- .featured-work -->
+<!--	</div> .site-content -->
+    </section><!-- .featured-work -->
 
-<section class="recent-posts">
-	<div class="site-content">
+    <section id="recent-posts">
+<!--	<div class="site-content">-->
         <div class="blog-post">
             <h4>From the Blog</h4>
             
@@ -62,7 +62,20 @@ get_header(); ?>
                 <?php endwhile; ?> 
             <?php wp_reset_query(); ?>
         </div><!-- .blog-post -->
-	</div><!-- .site-content -->
-</section><!-- .recent-posts -->
+<!--	</div> .site-content -->
+    </section><!-- .recent-posts -->
+
+    <section id="latest-tweet">
+<!--	<div class="site-content">-->
+        <?php if (is_active_sidebar('sidebar-2')) : ?>
+        <h3>Recent Tweet</h3>
+        <h2>@Accelerate</h2>
+        <div id="secondary" class="widget-area" role="complementary">
+            <?php dynamic_sidebar('sidebar-2'); ?>
+            <a class="follow-us" href="#">Follow Us <span>&rsaquo;</span></a>
+        </div>
+        <?php endif; ?>
+    </section><!-- .latest-tweet -->
+</div><!-- .site-content -->
 
 <?php get_footer(); ?>
