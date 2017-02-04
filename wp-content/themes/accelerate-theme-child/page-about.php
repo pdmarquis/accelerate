@@ -39,12 +39,12 @@ get_header(); ?>
                 <section id="services-wrapper">
                     <article>
                         <div class="service">
-                            <h2 class="service-name"><?php echo $service_1_name ?></h2>
                             <div class="flex-wrapper">
                                 <figure class="service-image">
                                     <?php echo wp_get_attachment_image( $service_1_image, $size ); ?>
                                 </figure>
                                 <div class="service-description">
+                                    <h2 class="service-name"><?php echo $service_1_name ?></h2>
                                     <p><?php echo $service_1_description ?></p>
                                 </div>
                             </div>
@@ -52,12 +52,12 @@ get_header(); ?>
                     </article>
                     <article>
                         <div class="service">
-                            <h2 class="service-name"><?php echo $service_2_name ?></h2>
                             <div class="flex-wrapper">
                                 <figure class="service-image">
                                     <?php echo wp_get_attachment_image( $service_2_image, $size ); ?>
                                 </figure>
                                 <div class="service-description">
+                                    <h2 class="service-name"><?php echo $service_2_name ?></h2>
                                     <p><?php echo $service_2_description ?></p>
                                 </div>
                             </div>
@@ -67,12 +67,12 @@ get_header(); ?>
                     <?php if ($service_3_name && $service_3_image && $service_3_description) { ?>
                         <article>
                             <div class="service">
-                                <h2 class="service-name"><?php echo $service_3_name ?></h2>
                                 <div class="flex-wrapper">
                                     <figure class="service-image">
                                         <?php echo wp_get_attachment_image( $service_3_image, $size ); ?>
                                     </figure>
                                     <div class="service-description">
+                                        <h2 class="service-name"><?php echo $service_3_name ?></h2>
                                         <p><?php echo $service_3_description ?></p>
                                     </div>
                                 </div>
@@ -83,12 +83,12 @@ get_header(); ?>
                     <?php if ($service_4_name && $service_4_image && $service_4_description) { ?>
                         <article>
                             <div class="service">
-                                <h2 class="service-name"><?php echo $service_4_name ?></h2>
                                 <div class="flex-wrapper">
                                     <figure class="service-image">
                                         <?php echo wp_get_attachment_image( $service_4_image, $size ); ?>
                                     </figure>
                                     <div class="service-description">
+                                        <h2 class="service-name"><?php echo $service_4_name ?></h2>
                                         <p><?php echo $service_4_description ?></p>
                                     </div>
                                 </div>
