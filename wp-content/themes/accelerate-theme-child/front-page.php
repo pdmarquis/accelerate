@@ -22,11 +22,9 @@ get_header(); ?>
 			</div>
 		<?php endwhile; // end of the loop. ?>
     </section><!-- .home-page -->
-<!--	</div> .site-content -->
 
 <div class="site-content">
     <section class="featured-work">
-<!--    <div class="site-content">-->
         <div class="work-items">
             
             <h4 class="featured-h4">Featured Work</h4>
@@ -46,11 +44,9 @@ get_header(); ?>
             <?php endwhile; ?> 
             <?php wp_reset_query(); ?>
         </div><!-- .work-items -->
-<!--	</div> .site-content -->
     </section><!-- .featured-work -->
 
     <section id="recent-posts">
-<!--	<div class="site-content">-->
         <div class="blog-post">
             <h4>From the Blog</h4>
             
@@ -62,17 +58,17 @@ get_header(); ?>
                 <?php endwhile; ?> 
             <?php wp_reset_query(); ?>
         </div><!-- .blog-post -->
-<!--	</div> .site-content -->
     </section><!-- .recent-posts -->
 
-    <section id="latest-tweet">
-<!--	<div class="site-content">-->
+    <section id="sidebar-2">
         <?php if (is_active_sidebar('sidebar-2')) : ?>
+<!--
         <h3>Recent Tweet</h3>
         <h2>@Accelerate</h2>
+-->
         <div id="secondary" class="widget-area" role="complementary">
             <?php dynamic_sidebar('sidebar-2'); ?>
-            <a class="follow-us" href="#">Follow Us <span>&rsaquo;</span></a>
+<!--            <a class="follow-us" href="#">Follow Us <span>&rsaquo;</span></a>-->
         </div>
         <?php endif; ?>
     </section><!-- .latest-tweet -->

@@ -89,7 +89,7 @@
     width: 33%;
 }
 
-#recent-posts, #latest-tweet {
+#recent-posts, #sidebar-2 {
     box-sizing: border-box;
     width: 45%;
 }
@@ -98,31 +98,58 @@
     float: left;
 }
 
-#latest-tweet {
+#sidebar-2 {
     float: right;
 }
 
-#latest-tweet h3 {
+#sidebar-2 h3 {
     font-size: 16px;
     font-family: 'Montserrat';
     color: #a6a6a6;
     text-transform: uppercase;
 }
 
-#latest-tweet ul {
+#sidebar-2 .widget-title {
+    margin: 0 0 1rem 0;
+}
+
+#sidebar-2 ul {
     list-style: none;
     margin-left: 0;
+    margin-bottom: 1rem;
 }
 
-#latest-tweet .widget {
-    padding: 0;
-}
-
-#latest-tweet .follow-us {
+/*Need to make display: block in order for margin to work*/
+#sidebar-2 ul:after {
+    content: "Follow Us \203A";
     color: #45ac9d;
+    display: block;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+#sidebar-2 .widget {
+    padding: 0;
+}
+
+#sidebar-2 aside {
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.mc4wp-form-fields label {
+    display: block;
+}
+
+.mc4wp-form-fields input {
+    display: block;
+    width: 100%;
+}
+
+.mc4wp-form-fields p {
+    overflow: hidden;
 }
 
 /* Case Studies */
@@ -180,13 +207,16 @@
 
 /* Contact Page */
 
-.field-wrap .pdm-send-btn {
+.pdm-send-btn {
     float: right;
     background: none repeat scroll 0 0 #45ac9d;
     color: #fff;
+    width: 40% !important;
+}
+
+#nf-field-4-wrap .pdm-send-btn {
     font-size: 1.4rem;
     line-height: 3rem;
-    width: 40% !important;
 }
 
 /*Needed to get the first two input fields to float them left*/
