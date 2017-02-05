@@ -99,7 +99,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
             
             <div id="about-contact">
-                <h2>Interested in working with us?</h2> <a href="<?php home_url() ?> + /contact/" class="button">Contact Us</a>
+                <h2>Interested in working with us?</h2> <a href="<?php echo home_url(); ?>/contact/" class="button">Contact Us</a>
             </div>
 
 		</div><!-- #content -->
